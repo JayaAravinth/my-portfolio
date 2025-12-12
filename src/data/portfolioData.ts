@@ -3,17 +3,17 @@ import type { Project, Experience, Skill, Contact } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Project Name 1',
-    description: 'A brief description of your project and what problem it solves.',
-    technologies: ['React', 'TypeScript', 'Node.js'],
-    githubUrl: 'https://github.com/yourusername/project1',
-    liveUrl: 'https://project1.com',
+    title: "HR Management System (Internal Project)",
+    description: "Developed a web-based HR application to manage employee profiles, work status, and salary information, significantly improving administrative efficiency. Designed and implemented user-friendly interfaces using React.js, Redux, and Material-UI, resulting in improved usability and user engagement. Implemented secure data handling practices and Role-Based Access Control (RBAC) to ensure data privacy and compliance with organizational standards.",
+    technologies: ["React", "Redux", "Material-UI",],
+    githubUrl: "https://github.com/yourusername/project1",
+    liveUrl: "https://project1.com"
   },
   {
     id: 2,
-    title: 'Project Name 2',
-    description: 'Another project showcasing your skills and expertise.',
-    technologies: ['React', 'Express', 'MongoDB'],
+    title: 'Resilient+ (Client Project – US Automotive Sector)',
+    description: 'Developed interactive dashboards to monitor supplier and part data, including risk metrics, enabling proactive supply chain risk management. Utilized GraphQL and Apollo Client for efficient data fetching and state management to ensure seamless performance and scalability across modules. Designed intuitive data visualizations and implemented real-time alerts, improving visibility, responsiveness, and decision-making in supply chain operations.',
+    technologies: ['React', 'TypeScript', 'GraphQL', 'Redux-Saga'],
     githubUrl: 'https://github.com/yourusername/project2',
   },
 ];
@@ -21,49 +21,41 @@ export const projects: Project[] = [
 export const experience: Experience[] = [
   {
     id: 1,
-    company: 'Company Name',
+    company: 'Inforios Softwares Technology Pvt Ltd',
     position: 'Software Developer',
-    duration: 'Jan 2023 - Present',
-    description: 'Describe your role and key achievements here.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'AWS'],
-  },
-  {
-    id: 2,
-    company: 'Previous Company',
-    position: 'Junior Developer',
-    duration: 'Jun 2021 - Dec 2022',
-    description: 'Describe your previous role and accomplishments.',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'Git'],
+    duration: 'Sep 2022 - Present',
+    description: 'Developing and maintaining scalable web applications using React, TypeScript, GraphQL, and Redux-Saga. Collaborated closely with cross-functional teams to implement new features, improve UI performance, and enhance overall user experience. Played a key role in optimizing state management, reducing API load, and building reusable components that improved development efficiency. Actively participated in daily scrum meetings, sprint planning, and retrospective sessions to ensure smooth delivery and alignment across teams. Contributed to code reviews, best practices, and agile processes to deliver high-quality releases on time.',
+    technologies: ['React', 'TypeScript', 'GraphQL', 'Redux', 'Redux-Saga', 'GitHub', 'Jira'],
   },
 ];
 
 export const skills: Skill[] = [
   {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+    category: 'Languages',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'Python', 'REST APIs'],
+    category: 'Frameworks & Libraries',
+    items: ['React.js', 'Redux', 'Redux-Saga', 'TanStack Query (React Query)', 'REST APIs', 'GraphQL',],
   },
   {
-    category: 'Database',
-    items: ['MongoDB', 'PostgreSQL', 'MySQL'],
+    category: 'UI Libraries / Styling Tools',
+    items: ['Material-UI (MUI)', 'PrimeReact', 'Bootstrap', 'Styled Components', 'Responsive Web Design', 'UI/UX Best Practices'],
   },
   {
-    category: 'Tools & Others',
-    items: ['Git', 'Docker', 'AWS', 'Jest', 'Webpack'],
+    category: 'Tools & Practices',
+    items: ['GitHub', 'Jest', 'Jira', 'Agile / Scrum', 'Component-Driven Development'],
   },
 ];
 
 export const contact: Contact = {
-  email: 'your.email@example.com',
+  email: 'jayaaravinth1001@gmail.com',
   github: 'https://github.com/yourusername',
-  linkedin: 'https://linkedin.com/in/yourusername',
+  linkedin: 'https://www.linkedin.com/in/jayalakshmi27011998',
 };
 
 export const personalInfo = {
-  name: 'Your Name',
-  title: 'Full Stack Developer',
-  bio: 'Passionate developer with experience in building web applications. I love creating elegant solutions to complex problems.',
+  name: 'Jayalakshmi K',
+  title: 'React Web Developer',
+  bio: 'Passionate developer with hands-on experience building scalable, user-focused web applications. I enjoy turning complex requirements into clean, efficient, and elegant solutions while continuously learning and improving my craft.',
 };

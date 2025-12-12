@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
                 </span>
               ))}
             </div>
-            <div className="project-links">
+            {/* <div className="project-links">
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
                   Live Demo
                 </a>
               )}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
