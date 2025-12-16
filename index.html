@@ -1,13 +1,113 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#667eea" />
+
+    <!-- Robots Meta -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+    <!-- Preload critical assets -->
+    <link rel="modulepreload" href="/src/main.tsx" />
+
+    <!-- Title & Description (VERY IMPORTANT FOR SEO) -->
+    <title>Jayalakshmi K | Frontend React Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Frontend React Developer with 3+ years of experience building scalable, high-performance web applications using React, TypeScript, Redux, and GraphQL. View my portfolio of projects and hire me for your next project."
+    />
+
+    <!-- Keywords (optional but helpful) -->
+    <meta
+      name="keywords"
+      content="Frontend Developer, React Developer, JavaScript, TypeScript, Redux, GraphQL, Web Developer, React Portfolio, Hire React Developer, India"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Jayalakshmi K" />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://my-portfolio-smoky-eight-63.vercel.app/"
+    />
+
+    <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jayalakshmi K | Frontend React Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend React Developer with 3+ years of experience building scalable, high-performance web applications using React, TypeScript, and Redux."
+    />
+    <meta
+      property="og:url"
+      content="https://my-portfolio-smoky-eight-63.vercel.app/"
+    />
+    <meta property="og:site_name" content="Jayalakshmi K Portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jayalakshmi K | Frontend React Developer Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Frontend React Developer with expertise in React, TypeScript, Redux, and modern UI development. 3+ years of experience."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Inline critical CSS for faster initial render -->
+    <style>
+      *{margin:0;padding:0;box-sizing:border-box}
+      body{background:#0d0d0d;color:#e0e0e0;margin:0;min-width:320px}
+      #root{display:flex;min-height:100vh;flex-direction:column;width:100%}
+      .header{position:sticky;top:0;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1);padding:1rem 0;z-index:1000}
+      .nav{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+      .logo{font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+      .hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;padding:2rem;background:#0d0d0d;position:relative}
+      .hero-content{text-align:center;max-width:800px;position:relative;z-index:1}
+      .hero-title{font-size:3.5rem;margin-bottom:1rem;color:#fff}
+      .hero-subtitle{font-size:2rem;margin-bottom:1.5rem;color:#b0b0b0}
+      .hero-bio{font-size:1.1rem;line-height:1.8;color:#999;margin-bottom:2.5rem}
+      @media(max-width:768px){.hero-title{font-size:2.25rem}.hero-subtitle{font-size:1.25rem}.hero-bio{font-size:1rem}}
+    </style>
+
+    <!-- Structured Data (Advanced SEO – Optional but Powerful) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jayalakshmi K",
+      "jobTitle": "Frontend React Developer",
+      "description": "Frontend Developer with 3+ years of experience building scalable, high-performance web applications using React, TypeScript, and Redux",
+      "url": "https://my-portfolio-smoky-eight-63.vercel.app/",
+      "email": "jayaaravinth1001@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "India"
+      },
+      "knowsAbout": ["React.js", "TypeScript", "JavaScript", "Redux", "GraphQL", "Web Development", "Frontend Development"],
+      "sameAs": [
+        "https://www.linkedin.com/in/jayalakshmi27011998",
+        "https://github.com/JayaAravinth"
+      ]
+    }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Add fetchpriority and async loading hints -->
+    <script type="module" src="/src/main.tsx" fetchpriority="high"></script>
   </body>
 </html>

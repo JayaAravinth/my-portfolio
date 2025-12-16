@@ -15,13 +15,13 @@ const Hero: React.FC = () => {
             className="btn btn-primary"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            View My Work
+            View Projects
           </button>
           <button
             className="btn btn-secondary"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Contact Me
+            Hire Me
           </button>
         </div>
       </div>

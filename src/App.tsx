@@ -1,11 +1,14 @@
+import { lazy, Suspense } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Experience from './components/Experience'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+
+// Lazy load components that are below the fold
+const Experience = lazy(() => import('./components/Experience'))
+const Projects = lazy(() => import('./components/Projects'))
+const Skills = lazy(() => import('./components/Skills'))
+const Contact = lazy(() => import('./components/Contact'))
+const Footer = lazy(() => import('./components/Footer'))
 
 function App() {
   return (
@@ -13,12 +16,16 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Contact />
+        <Suspense fallback={<div style={{ minHeight: '300px' }} />}>
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

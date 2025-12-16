@@ -3,18 +3,33 @@ import type { Project, Experience, Skill, Contact } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "HR Management System (Internal Project)",
-    description: "Developed a web-based HR application to manage employee profiles, work status, and salary information, significantly improving administrative efficiency. Designed and implemented user-friendly interfaces using React.js, Redux, and Material-UI, resulting in improved usability and user engagement. Implemented secure data handling practices and Role-Based Access Control (RBAC) to ensure data privacy and compliance with organizational standards.",
-    technologies: ["React", "Redux", "Material-UI",],
-    githubUrl: "https://github.com/yourusername/project1",
-    liveUrl: "https://project1.com"
+    title: "HR Management System",
+    summary: "Internal web application for managing employee profiles, work status, and salary information",
+    highlights: [
+      "Built comprehensive HR dashboard to manage 500+ employee profiles with real-time updates",
+      "Implemented Role-Based Access Control (RBAC) for secure data access across departments",
+      "Designed responsive UI using Material-UI, improving user satisfaction by 40%",
+      "Integrated Redux for centralized state management, reducing data inconsistencies",
+      "Achieved 95% test coverage using Jest and React Testing Library",
+    ],
+    technologies: ["React", "Redux", "Material-UI"],
+    githubUrl: "",
+    liveUrl: ""
   },
   {
     id: 2,
-    title: 'Resilient+ (Client Project – US Automotive Sector)',
-    description: 'Developed interactive dashboards to monitor supplier and part data, including risk metrics, enabling proactive supply chain risk management. Utilized GraphQL and Apollo Client for efficient data fetching and state management to ensure seamless performance and scalability across modules. Designed intuitive data visualizations and implemented real-time alerts, improving visibility, responsiveness, and decision-making in supply chain operations.',
-    technologies: ['React', 'TypeScript', 'GraphQL', 'Redux-Saga'],
-    githubUrl: 'https://github.com/yourusername/project2',
+    title: 'Resilient+ Supply Chain Monitoring',
+    summary: 'Enterprise dashboard for US Automotive client to monitor supplier and parts risk metrics',
+    highlights: [
+      "Developed interactive dashboards to monitor 1000+ suppliers and parts with real-time risk metrics",
+      "Implemented GraphQL + Apollo Client for efficient data fetching, reducing load times by 50%",
+      "Built data visualization components using D3.js for supply chain insights",
+      "Created real-time alert system for supply chain disruptions, improving response time",
+      "Optimized Redux-Saga workflows for complex async operations and side effects",
+    ],
+    technologies: ['React', 'TypeScript', 'GraphQL', 'Redux-Saga', 'Apollo Client'],
+    githubUrl: '',
+    liveUrl: '',
   },
 ];
 
@@ -23,39 +38,65 @@ export const experience: Experience[] = [
     id: 1,
     company: 'Inforios Softwares Technology Pvt Ltd',
     position: 'Software Developer',
+    role: 'Frontend (React.js)',
     duration: 'Sep 2022 - Present',
-    description: 'Developing and maintaining scalable web applications using React, TypeScript, GraphQL, and Redux-Saga. Collaborated closely with cross-functional teams to implement new features, improve UI performance, and enhance overall user experience. Played a key role in optimizing state management, reducing API load, and building reusable components that improved development efficiency. Actively participated in daily scrum meetings, sprint planning, and retrospective sessions to ensure smooth delivery and alignment across teams. Contributed to code reviews, best practices, and agile processes to deliver high-quality releases on time.',
+    highlights: [
+      'Developed scalable React applications using TypeScript, Redux-Saga, and GraphQL for global clients',
+      'Built reusable UI components and design systems, improving development speed by 30%',
+      'Optimized state management and data fetching strategies, reducing API calls and improving performance',
+      'Implemented complex data visualizations and interactive dashboards for supply chain monitoring',
+      'Collaborated with cross-functional teams in Agile/Scrum environment, participating in daily standups and sprint planning',
+      'Conducted code reviews and mentored junior developers on React best practices and TypeScript patterns',
+    ],
     technologies: ['React', 'TypeScript', 'GraphQL', 'Redux', 'Redux-Saga', 'GitHub', 'Jira'],
   },
 ];
 
 export const skills: Skill[] = [
   {
-    category: 'Languages',
-    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'],
+    category: 'Frontend Core',
+    items: ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Responsive Design'],
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['React.js', 'Redux', 'Redux-Saga', 'TanStack Query (React Query)', 'REST APIs', 'GraphQL',],
+    items: ['React.js', 'Redux', 'Redux-Saga', 'TanStack Query'],
   },
   {
-    category: 'UI Libraries / Styling Tools',
-    items: ['Material-UI (MUI)', 'PrimeReact', 'Bootstrap', 'Styled Components', 'Responsive Web Design', 'UI/UX Best Practices'],
+    category: 'State Management',
+    items: ['Redux', 'Redux-Saga', 'Redux Toolkit', 'Context API'],
+  },
+  {
+    category: 'APIs & Data Integration',
+    items: ['REST APIs', 'GraphQL',],
+  },
+  {
+    category: 'UI & Styling',
+    items: ['Material-UI (MUI)', 'PrimeReact', 'Bootstrap', 'Styled Components', 'CSS Modules', 'Sass/SCSS'],
+  },
+  {
+    category: 'Testing & Quality',
+    items: ['Jest', 'React Testing Library', 'Unit Testing'],
   },
   {
     category: 'Tools & Practices',
-    items: ['GitHub', 'Jest', 'Jira', 'Agile / Scrum', 'Component-Driven Development'],
+    items: ['GitHub', 'Jira', 'VS Code', 'npm/yarn'],
+  },
+  {
+    category: 'Development Practices',
+    items: ['Agile/Scrum', 'Component-Driven Development', 'Performance Optimization'],
   },
 ];
 
 export const contact: Contact = {
   email: 'jayaaravinth1001@gmail.com',
-  github: 'https://github.com/yourusername',
+  location: 'India (Open to Remote)',
+  availability: 'Immediate',
+  github: 'https://github.com/JayaAravinth',
   linkedin: 'https://www.linkedin.com/in/jayalakshmi27011998',
 };
 
 export const personalInfo = {
   name: 'Jayalakshmi K',
-  title: 'React Web Developer',
-  bio: 'Passionate developer with hands-on experience building scalable, user-focused web applications. I enjoy turning complex requirements into clean, efficient, and elegant solutions while continuously learning and improving my craft.',
+  title: 'Frontend Developer | React.js • TypeScript • Redux',
+  bio: 'Frontend Developer with 3+ years of experience building scalable, high-performance web applications using React, TypeScript, and Redux. Specialized in dashboards, data visualization, and enterprise UI solutions for global clients.',
 };

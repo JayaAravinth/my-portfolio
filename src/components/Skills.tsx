@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { skills } from '../data/portfolioData';
+import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Skills: React.FC = () => {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
     <section className="section" id="skills">
       <h2 className="section-title">Skills</h2>
-      <div className="skills-grid">
+      <div
+        ref={elementRef}
+        className={`skills-grid ${isVisible ? 'animate-in' : ''}`}
+      >
         {skills.map((skillCategory, index) => (
           <div key={index} className="skill-category">
             <h3 className="skill-category-title">{skillCategory.category}</h3>
@@ -23,4 +29,4 @@ const Skills: React.FC = () => {
   );
 };
 
-export default Skills;
+export default memo(Skills);

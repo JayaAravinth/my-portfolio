@@ -1,7 +1,9 @@
 export interface Project {
   id: number;
   title: string;
-  description: string;
+  summary?: string;
+  description?: string;
+  highlights: string[];
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
@@ -12,8 +14,10 @@ export interface Experience {
   id: number;
   company: string;
   position: string;
+  role?: string;
   duration: string;
-  description: string;
+  description?: string;
+  highlights: string[];
   technologies: string[];
 }
 
@@ -24,6 +28,8 @@ export interface Skill {
 
 export interface Contact {
   email: string;
+  location: string;
+  availability: string;
   github?: string;
   linkedin?: string;
   twitter?: string;
