@@ -3,9 +3,20 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Modern Green/Emerald Color Palette */
+  --primary-green: #10b981;
+  --primary-emerald: #059669;
+  --accent-lime: #84cc16;
+  --dark-bg: #0a0f0d;
+  --dark-bg-secondary: #111b16;
+  --glass-bg: rgba(16, 185, 129, 0.05);
+  --glass-border: rgba(16, 185, 129, 0.2);
+  --text-primary: #f0fdf4;
+  --text-secondary: #d1fae5;
+
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #0d0d0d;
+  color: var(--text-primary);
+  background-color: var(--dark-bg);
 
   font-synthesis: none;
   text-rendering: optimizeSpeed;
@@ -21,7 +32,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #0d0d0d;
+  background: linear-gradient(135deg, #0a0f0d 0%, #111b16 50%, #0a1410 100%);
+  background-attachment: fixed;
 }
 
 #root {

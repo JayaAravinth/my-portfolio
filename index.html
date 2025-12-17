@@ -69,16 +69,16 @@
     <!-- Inline critical CSS for faster initial render -->
     <style>
       *{margin:0;padding:0;box-sizing:border-box}
-      body{background:#0d0d0d;color:#e0e0e0;margin:0;min-width:320px}
+      body{background:linear-gradient(135deg,#0a0f0d 0%,#111b16 50%,#0a1410 100%);background-attachment:fixed;color:#f0fdf4;margin:0;min-width:320px}
       #root{display:flex;min-height:100vh;flex-direction:column;width:100%}
-      .header{position:sticky;top:0;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1);padding:1rem 0;z-index:1000}
+      .header{position:sticky;top:0;background:rgba(10,15,13,.7);backdrop-filter:blur(20px);border-bottom:1px solid rgba(16,185,129,.2);padding:1rem 0;z-index:1000;box-shadow:0 8px 32px rgba(16,185,129,.1)}
       .nav{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
-      .logo{font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-      .hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;padding:2rem;background:#0d0d0d;position:relative}
-      .hero-content{text-align:center;max-width:800px;position:relative;z-index:1}
-      .hero-title{font-size:3.5rem;margin-bottom:1rem;color:#fff}
-      .hero-subtitle{font-size:2rem;margin-bottom:1.5rem;color:#b0b0b0}
-      .hero-bio{font-size:1.1rem;line-height:1.8;color:#999;margin-bottom:2.5rem}
+      .logo{font-size:1.5rem;font-weight:bold;background:linear-gradient(135deg,#10b981 0%,#84cc16 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 10px rgba(16,185,129,.3))}
+      .hero{min-height:calc(100vh - 80px);display:flex;align-items:center;justify-content:center;padding:2rem;position:relative}
+      .hero-content{text-align:center;max-width:800px;position:relative;z-index:1;padding:3rem 2rem;background:rgba(16,185,129,.05);backdrop-filter:blur(20px);border-radius:24px;border:1px solid rgba(16,185,129,.2);box-shadow:0 8px 32px rgba(16,185,129,.1)}
+      .hero-title{font-size:3.5rem;margin-bottom:1rem;color:#f0fdf4;text-shadow:0 0 40px rgba(16,185,129,.3)}
+      .hero-subtitle{font-size:2rem;margin-bottom:1.5rem;color:#d1fae5;text-shadow:0 0 20px rgba(16,185,129,.2)}
+      .hero-bio{font-size:1.1rem;line-height:1.8;color:rgba(209,250,229,.8);margin-bottom:2.5rem}
       @media(max-width:768px){.hero-title{font-size:2.25rem}.hero-subtitle{font-size:1.25rem}.hero-bio{font-size:1rem}}
     </style>
 
@@ -107,7 +107,6 @@
 
   <body>
     <div id="root"></div>
-    <!-- Add fetchpriority and async loading hints -->
-    <script type="module" src="/src/main.tsx" fetchpriority="high"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
