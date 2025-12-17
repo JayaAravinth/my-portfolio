@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import AnimatedBackground from './components/AnimatedBackground'
 
 // Lazy load components that are below the fold
 const Experience = lazy(() => import('./components/Experience'))
@@ -13,6 +14,7 @@ const Footer = lazy(() => import('./components/Footer'))
 function App() {
   return (
     <div className="app">
+      <AnimatedBackground />
       <Header />
       <main>
         <Hero />

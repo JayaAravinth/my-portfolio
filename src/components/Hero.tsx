@@ -1,9 +1,24 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
+import { CodeIcon, RocketIcon, SparkleIcon } from './DecorativeIcons';
 
 const Hero: React.FC = () => {
   return (
     <section className="hero" id="about">
+      {/* Floating decorative icons */}
+      <div className="hero-decoration hero-decoration-1">
+        <CodeIcon />
+      </div>
+      <div className="hero-decoration hero-decoration-2">
+        <RocketIcon />
+      </div>
+      <div className="hero-decoration hero-decoration-3">
+        <SparkleIcon />
+      </div>
+      <div className="hero-decoration hero-decoration-4">
+        <SparkleIcon />
+      </div>
+
       <div className="hero-content">
         <h1 className="hero-title">
           Hi, I'm <span className="highlight">{personalInfo.name}</span>
