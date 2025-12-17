@@ -40,6 +40,8 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash][extname]',
+        // Add explicit imports for better preloading
+        experimentalMinChunkSize: 1024,
       },
     },
     // Use terser for better minification (smaller than esbuild)

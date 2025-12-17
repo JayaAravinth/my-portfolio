@@ -21,6 +21,8 @@
     0 8px 32px rgba(20, 184, 166, 0.15),
     inset 0 0 60px rgba(20, 184, 166, 0.05);
   animation: float 20s infinite ease-in-out;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .shape-1 {
@@ -88,6 +90,8 @@
   filter: blur(100px);
   opacity: 0.3;
   animation: pulse-glow 8s infinite ease-in-out;
+  will-change: transform, opacity;
+  transform: translateZ(0);
 }
 
 .orb-1 {
@@ -129,6 +133,8 @@
     radial-gradient(at 50% 50%, rgba(13, 148, 136, 0.05) 0px, transparent 50%),
     radial-gradient(at 60% 20%, rgba(20, 184, 166, 0.04) 0px, transparent 40%);
   animation: mesh-move 15s infinite ease-in-out alternate;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Keyframe animations */
