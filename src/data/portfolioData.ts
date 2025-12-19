@@ -96,7 +96,7 @@ export const contact: Contact = {
 };
 
 export const personalInfo = {
-  name: 'Jayalakshmi K',
+  name: 'Jayalakshmi. K',
   title: 'Frontend Developer | React.js • TypeScript • Redux',
   bio: 'Frontend Developer with 3+ years of experience building scalable, high-performance web applications using React, TypeScript, and Redux. Specialized in dashboards, data visualization, and enterprise UI solutions for global clients.',
 };
