@@ -1,0 +1,47 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Soft Creamy Minimal Palette */
+  --accent: #1a1a1a;              /* near-black — highlights, buttons */
+  --accent-hover: #000000;
+  --accent-soft: #f4ecda;         /* soft cream — tag bg */
+  --primary-green: #1a1a1a;
+  --primary-emerald: #000000;
+  --accent-lime: #1a1a1a;
+  --bg: #fbf6ea;                  /* soft creamy tint */
+  --bg-soft: #ffffff;             /* card surface */
+  --dark-bg: #fbf6ea;
+  --dark-bg-secondary: #f6efde;
+  --border: #ecdfc2;
+  --glass-bg: #ffffff;
+  --glass-border: #ecdfc2;
+  --text-primary: #2a2317;        /* warm near-black */
+  --text-secondary: #5c5344;
+  --text-muted: #968a76;
+
+  color-scheme: light;
+  color: var(--text-primary);
+  background-color: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+}
